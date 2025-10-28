@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Busca de Filmes (Estilo Letterboxd)</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>Projeto: Busca (API TMDb)</h1>
+      <p>
+        Este exemplo usa a API do The Movie Database (TMDb)
+        para buscar filmes por título ou por ator.
+      </p>
+    </header>
+
+    <hr>
+
+    <section id="container-pesquisa-filme">
+      <h2>Etapa 1 — Busca de Filmes por Título</h2>
+      <p>Digite o nome de um filme e clique no botão <strong>Buscar Filme</strong>.</p>
+
+      <div class="barra-pesquisa">
+        <input id="campo-busca" type="text" placeholder="Ex.: Batman, Matrix, Avatar..." />
+        <button id="botao-buscar-filme">Buscar Filme</button>
+      </div>
+
+      <p id="mensagem-status-filme" class="status"></p>
+    </section>
+
+    <hr>
+    
+    <section id="container-pesquisa-ator">
+        <h2>Etapa 1.1 — Busca por Ator</h2>
+        <p>Digite o nome de um ator/atriz. Clique no ator para ver seus filmes.</p>
+
+        <div class="barra-pesquisa">
+          <input id="campo-ator" type="text" placeholder="Ex.: Tom Hanks, Meryl Streep..." />
+          <button id="botao-buscar-ator">Buscar Ator</button>
+        </div>
+
+        <p id="mensagem-status-ator" class="status"></p>
+    </section>
+
+    <hr>
+
+    <section id="container-resultados">
+      <h2>Etapa 2 — Resultados da busca</h2>
+      <p id="mensagem-status-geral" class="status">Abaixo aparecerão os resultados da busca:</p>
+      <div id="lista-resultados" class="grade"></div>
+    </section>
+
+    <hr>
+
+    <section id="container-paginacao">
+      <h2> Etapa 3 — Navegar entre páginas</h2>
+      <p>Use os botões para ver mais resultados.</p>
+      <div class="paginacao">
+        <button id="botao-anterior">◀ Anterior</button>
+        <button id="botao-proximo">Próxima ▶</button>
+      </div>
+    </section>
+
+    <hr>
+
+    <footer>
+      <p>
+            Aula Senac - Turma A
+      </p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
